@@ -8,29 +8,33 @@
 
 get_header(); ?>
 
-<!--インフォメーションここから
 
-<section class="width_100p">
 
-<h2 class="text-center font_sz50p"><span class="cf_red font_60p">I</span>NFO</h2>
 
-<p class="text-center">最新情報や更新内容等について。</p>
 
-<?php $loop = new WP_Query(array("post_type" => "news", "posts_per_page" => 3 ));
+<div id="content" class="site-content">
+
+<!--インフォメーションここから-->
+
+<div class="clearfix width_100p" id="start">
+
+<section class="width_100p info_inner">
+
+<?php $loop = new WP_Query(array("post_type" => "news", "posts_pesr_page" => 1 ));
 
 while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="width_90p flt_l"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="width_100p flt_l"<?php post_class(); ?>>
 
-	<ul class="pa_10p width_100px ma_auto clearfix">
+	<ul class="pa_20p clearfix info_top">
 
-		<li class="flt_l width_33p text-center"><h3 class="font_12p"><?php the_title(); ?></h3></li>
+		<li class="flt_l info_style"><?php the_title(); ?></li>
 
-		<li class="flt_l width_33p text-center line_h61"><?php the_time('Y/m/d'); ?></li>
+		<li class="flt_l lineh31"><?php the_time('Y/m/d'); ?></li>
 
-		<li class="flt_l width_33p text-center line_h61"><?php the_excerpt(); ?></li>
+		<li class="flt_l lineh31"><?php the_excerpt(); ?></li>
 
 	</ul>
 </div>
@@ -41,32 +45,79 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
+<!--インフォメーションここから-->
 
-<!--始まりのことば-->
 
-<h2 id="start" class="text-center font_sz50p back_mizublue pa_100_0 start_text" style="margin-top: 0px;">
-<img src="/wordpress_ren/wp-content/uploads/2017/03/first-text.png">
-<p>ようこそ！<br>ポートフォリオサイトへ<br>ゆっくりとご覧くださいませ</p>
-</h2>
-<!--始まりのことば-->
 
-<!--実績-->
+<!--solution-->
+
+<div class="clearfix width_100p pa_100_0" id="solution">
+
+<section class="col-xs12 col-sm-12 col-md-12">
+
+<h2 class="font_sz80p text-center">SOLUTION</h2>
+
+<div class="line_a"></div>
+
+<p class="text-center">ソリューション<br></p>
+
+</section>
 
 <div class="space_area">
 	<p>&nbsp;</p>
 </div>
 
+<section class="col-xs12 col-sm-12 col-md-12">
+
+<div class="pa_0p_10p">
+
+<?php $loop = new WP_Query(array("post_type" => "solution", "posts_per_page" => 3));
+
+while($loop->have_posts()): $loop->the_post(); ?>
+
+<div class="clearfix width_100p ma_auto">
+
+<div id=”post-<?php the_ID(); ?>” class="col-xs12 col-sm-6 col-md-4 ma_pa0p work"<?php post_class(); ?>>
+	<ul>
+
+	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 ma_pa0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
+		<ul>
+			<li class="z_in100 font_web font_sz33"><?php echo esc_html( $post->syurui ); ?></li>
+
+			<li class="lwidth_10p height_100p back_cf text-center"><h3 class="font_20p text_dno"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
+		</ul>
+	</li>
+
+	<li class="pa_25_10p width_90p text-center"><?php the_excerpt(); ?></li>
+
+	</ul>
+</div>
+
+<?php endwhile; ?>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!--solution-->
 
 
-<div class="clearfix width_100p pa_100_0" id="portforio">
+
+<!--実績-->
+
+<div class="clearfix width_100p pa_100_0" id="work">
 
 <section class="col-xs12 col-sm-12 col-md-6">
 
-<h2 class="font_sz80p pa_top200p text-center">PORTFOLIO</h2>
+<h2 class="font_sz80p pa_top200p text-center">WORK</h2>
 
 <div class="line_a"></div>
 
-<p class="text-center">過去の実績 / WORK<br></p>
+<p class="text-center">過去の実績<br></p>
 
 </section>
 
@@ -216,7 +267,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<p>&nbsp;</p>
 </div>
 
-<div class="back_color001 pa_100_0" id="blog_info">
+<div class="back_color001 pa_100_0" id="blog">
 
 <div class="clearfix width_100p">
 
@@ -284,7 +335,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </div>
 
-<section class="flt_l width_100p back_grade_green pa_t50p">
+<section class="flt_l width_100p back_grade_green pa_t50p" id="contact">
 
 <h2 class="text-center font_sz80p color_cf">CONTACT</h2>
 

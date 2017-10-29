@@ -65,6 +65,15 @@ $(document).ready(function(){
 <?php wp_head(); ?>
 </head>
 
+
+
+
+
+
+
+
+
+
 <body <?php body_class(); ?> id="home">
 
 <!--sns-->
@@ -143,36 +152,3 @@ $(document).ready(function(){
 		</header><!-- #masthead -->
 
 
-		<!--インフォメーションここから-->
-
-		<section class="width_100p info_inner">
-
-		<?php $loop = new WP_Query(array("post_type" => "news", "posts_pesr_page" => 1 ));
-
-		while($loop->have_posts()): $loop->the_post(); ?>
-
-		<div class="clearfix width_100p ma_auto">
-
-		<div id=”post-<?php the_ID(); ?>” class="width_100p flt_l"<?php post_class(); ?>>
-
-			<ul class="pa_20p clearfix info_top">
-
-				<li class="flt_l info_style"><?php the_title(); ?></li>
-
-				<li class="flt_l lineh31"><?php the_time('Y/m/d'); ?></li>
-
-				<li class="flt_l lineh31"><?php the_excerpt(); ?></li>
-
-			</ul>
-		</div>
-
-		<?php endwhile; ?>
-
-		</div>
-
-		</section>
-
-		<!--インフォメーションここから-->
-
-
-		<div id="content" class="site-content">
