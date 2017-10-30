@@ -59,7 +59,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="line_a"></div>
 
-<p class="text-center">ソリューション<br></p>
+<p class="text-center"><span class="glyphicon glyphicon-th-large" aria-hidden="true">ソリューション</span><br></p>
 
 </section>
 
@@ -117,7 +117,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="line_a"></div>
 
-<p class="text-center">過去の実績<br></p>
+<p class="text-center"><span class="glyphicon glyphicon-bookmark" aria-hidden="true">過去の実績</span><br></p>
 
 </section>
 
@@ -181,7 +181,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="line_b"></div>
 
-<p class="text-center">自己紹介</p>
+<p class="text-center"><span class="glyphicon glyphicon-user" aria-hidden="true">自己紹介</span></p>
 
 <div class="space_area_b">
 	<p>&nbsp;</p>
@@ -212,7 +212,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="line_a"></div>
 
-<p class="text-center">趣味の写真<br></p>
+<p class="text-center"><span class="glyphicon glyphicon-camera" aria-hidden="true">趣味の写真</span><br></p>
 
 </section>
 
@@ -277,7 +277,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="line_b"></div>
 
-<p class="text-center pa_25_10p">ブログ</p>
+<p class="text-center pa_25_10p"><span class="glyphicon glyphicon-book" aria-hidden="true">ブログ</span></p>
 
 </section>
 

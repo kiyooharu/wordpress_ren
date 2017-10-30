@@ -36,6 +36,32 @@ section{
   clear: both;
 }
 
+/*ソリューション*/
+.glyphicon-th-large:before {
+    content: "\e010";
+    padding: 10px;
+}
+.glyphicon-bookmark:before {
+    content: "\e044";
+    padding: 10px;
+}
+.glyphicon-user:before {
+    content: "\e008";
+    padding: 10px;
+}
+.glyphicon-camera:before {
+    content: "\e046";
+    padding: 10px;
+}
+.glyphicon-book:before {
+    content: "\e043";
+    padding: 10px;
+}
+.glyphicon-chevron-up:before {
+    content: "\e113";
+    font-size: 18px;
+    color: #fff;
+}
 /*margin*/
 .ma_l10p{
   margin-left: 10px;
@@ -128,8 +154,6 @@ section{
 }
 
 .back_bt a:link { color: #ddd !important }
-
-.back_bt a:link { color: #ddd !important }
 .back_bt a:visited { color: #ddd !important }
 .back_bt a:hover { color: #ddd !important }
 .back_bt a:active { color: #ddd !important }
@@ -142,6 +166,14 @@ a:visited { color: #000080; }
 a:hover { color: #ff0000; }
 a:active { color: #ff8000; }
 a{
+  text-decoration: none;
+}
+
+#footer-menu a:link { color: #000 !important }
+#footer-menu a:visited { color: #000 !important }
+#footer-menu a:hover { color: #000 !important }
+#footer-menu a:active { color: #000 !important }
+#footer-menu a{
   text-decoration: none;
 }
 
@@ -446,7 +478,9 @@ p{
   text-align: center;
   margin: 10px 0;
 }
-
+.back_mizublue {
+    background: #ddd;
+}
 #footer-menu ul li {
   display: inline;
   list-style: outside none none;
@@ -496,7 +530,7 @@ p{
 }
 .site-content {
     clear: both;
-    padding: 0px 0 30px;
+    padding: 0px 0 0px;
 }
 .back_color001{
   background-color: #ddd;
@@ -720,16 +754,6 @@ p{
 /*more*/
 
 /*footer*/
-.footer_back{
-    height: 200px;
-    background-image: url(/wordpress_ren/wp-content/uploads/2017/06/footer_back.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-}
 
 #footer-menu li{
   display: inline-block;
@@ -763,4 +787,6 @@ p{
 	font-size: 12px;
 }
 /*copyright*/
+
+
 

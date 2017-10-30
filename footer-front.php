@@ -16,13 +16,13 @@
 	<!--戻るボタン-->
 	<div id="page-top" class="page-top width_100p text_c">
 		<ul>
-			<li class="width_100p pa_20p ma_auto back_mizublue"><a href="#home" hid="move-page-top" class="move-page-top" rel="m_PageScroll2id"><img src="/wordpress_ren/wp-content/uploads/2017/05/back.png" style="width:5%;"></a></li>
+			<li class="width_100p ma_auto back_mizublue"><a href="#home" hid="move-page-top" class="move-page-top" rel="m_PageScroll2id"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></li>
 	  </ul>
 	</div>
 	<!--戻るボタン-->
 
 <!--フッターメニュー-->
-<div id="footer-menu" class="pa_20p footer_back">
+<div id="footer-menu" class="pa_20p">
     <?php wp_nav_menu( array ( 'theme_location' => 'footer-menu' ) ); ?>
 </div>
 <!--フッターメニュー-->
@@ -35,7 +35,7 @@
 
 
 
-<!--sns挿入箇所-->
+<!--sns挿入箇所
 					<?php do_action('fooding_footer_site_info'); ?>
 					<div clss="sns">
 						<ul class="clearfix">
@@ -44,7 +44,7 @@
 							<li class="flt_l width_25p">instg</li>
 						</ul>
 					</div>
-<!--sns挿入箇所-->
+sns挿入箇所-->
 
 				</div>
 			</div><!-- .site-info -->
