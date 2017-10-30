@@ -68,12 +68,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
 <body <?php body_class(); ?> id="home">
 
 <!--sns-->
