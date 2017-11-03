@@ -16,7 +16,7 @@
 	<!--戻るボタン-->
 	<div id="page-top" class="page-top width_100p text_c">
 		<ul>
-			<li class="width_100p pa_20p ma_auto back_mizublue"><a href="#home" hid="move-page-top" class="move-page-top" rel="m_PageScroll2id"><img src="/wordpress_ren/wp-content/uploads/2017/05/back.png" style="width:5%;"></a></li>
+			<li class="width_100p pa_20p ma_auto back_mizublue"><a href="#page" hid="move-page-top" class="move-page-top" rel="m_PageScroll2id"><img src="/wordpress_ren/wp-content/uploads/2017/05/back.png" style="width:5%;"></a></li>
 	  </ul>
 	</div>
 	<!--戻るボタン-->

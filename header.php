@@ -20,6 +20,8 @@
 
 <!--google font-->
 <link href="https://fonts.googleapis.com/css?family=Poppins|Questrial" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Great+Vibes|Quicksand|Raleway|Rubik" rel="stylesheet">
 <!--google font-->
 
 <!--フェードイン

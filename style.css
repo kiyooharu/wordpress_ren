@@ -790,3 +790,27 @@ p{
 
 
 
+
+/*ポートフォリオサイト*/
+.content-area {
+    width: 100%;
+    padding-top: 50px;
+}
+a.post-edit-link{
+    display: none;
+}
+.entry-meta {
+    display: none;
+}
+.portforio_real li:nth-child(1) {
+    padding: 0px 0px 20px 0px;
+}
+.portforio_real li:nth-child(2) {
+    padding: 0px 0px 20px 0px;
+}
+/*ポートフォリオサイト*/
+
+
+
+
+

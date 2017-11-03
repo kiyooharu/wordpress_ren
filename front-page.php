@@ -82,13 +82,19 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 ma_pa0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
 		<ul>
-			<li class="z_in100 font_web font_sz33"><?php echo esc_html( $post->syurui ); ?></li>
+			<li class="z_in100 font_web font_sz33"><?php echo esc_html( $post->syurui ); ?>
 
-			<li class="lwidth_10p height_100p back_cf text-center"><h3 class="font_20p text_dno"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
+			</li>
+
+			<li class="back_cf text-center">
+			<h3 class="font_20p text_dno"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+			<ul>
+				<li><li class="pa_25_10p width_100p text-center"><?php the_excerpt(); ?></li></li>
+			</ul>
+			</li>
+
 		</ul>
 	</li>
-
-	<li class="pa_25_10p width_90p text-center"><?php the_excerpt(); ?></li>
 
 	</ul>
 </div>
