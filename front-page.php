@@ -45,7 +45,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<!--インフォメーションここから-->
+<!--インフォメーションここまで-->
 
 
 
@@ -53,7 +53,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p pa_100_0" id="solution">
 
-<section class="col-xs12 col-sm-12 col-md-12">
+<section class="col-xs-12 col-sm-12 col-md-12">
 
 <h2 class="font_sz80p text-center">SOLUTION</h2>
 
@@ -67,42 +67,28 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<p>&nbsp;</p>
 </div>
 
-<section class="col-xs12 col-sm-12 col-md-12">
+<section class="col-xs-12 col-sm-12 col-md-12">
 
 <div class="pa_0p_10p">
 
-<?php $loop = new WP_Query(array("post_type" => "solution", "posts_per_page" => 3));
-
-while($loop->have_posts()): $loop->the_post(); ?>
-
-<div class="clearfix width_100p ma_auto">
-
-<div id=”post-<?php the_ID(); ?>” class="col-xs12 col-sm-6 col-md-4 ma_pa0p work"<?php post_class(); ?>>
-	<ul>
-
-	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 ma_pa0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
-		<ul>
-			<li class="z_in100 font_web font_sz33"><?php echo esc_html( $post->syurui ); ?>
-
-			</li>
-
-			<li class="back_cf text-center">
-			<h3 class="font_20p text_dno"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-			<ul>
-				<li><li class="pa_25_10p width_100p text-center"><?php the_excerpt(); ?></li></li>
-			</ul>
-			</li>
-
-		</ul>
-	</li>
-
+<div class="row">
+	<ul class="col-xs-12">
+		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p border_s1ddd">
+		<h2>WEBサイト</h2>
+		<span class="glyphicon glyphicon-list font_sz30 sol_icon" aria-hidden="true"></span>
+		<p class="pa_20p_0">多種多様な規模や業種のWEBサイトを制作しており、WEBサイト構築を通じてお客様の課題解決に貢献いたします。</p>
+		</li>
+		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p border_s1ddd">
+		<h2>運営支援</h2>
+		<span class="glyphicon glyphicon-retweet font_sz30 sol_icon" aria-hidden="true"></span>
+		<p class="pa_20p_0">システムやサーバ保守だけでなく、コンテンツの定期更新、クライアント様のデジタル戦略を支援、貢献いたします。</p>
+		</li>
+		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p border_s1ddd">
+		<h2>WEBシステム</h2>
+		<span class="glyphicon glyphicon-wrench font_sz30 sol_icon" aria-hidden="true"></span>
+		<p class="pa_20p_0">CMS,クライアント毎に異なる様々な課題に対して、最新テクノロジーを合わせた効率的なシステムをご提供いたします。</p>
+		</li>
 	</ul>
-</div>
-
-<?php endwhile; ?>
-
-</div>
-
 </div>
 
 </section>
@@ -117,7 +103,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p pa_100_0" id="work">
 
-<section class="col-xs12 col-sm-12 col-md-6">
+<section class="col-xs-12 col-sm-12 col-md-6">
 
 <h2 class="font_sz80p pa_top200p text-center">WORK</h2>
 
@@ -127,7 +113,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<section class="col-xs12 col-sm-12 col-md-6">
+<section class="col-xs-12 col-sm-12 col-md-6">
 
 <div class="pa_0p_10p">
 
@@ -137,7 +123,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs12 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-12 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
 	<ul>
 
 	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 ma_pa0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
@@ -212,7 +198,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <!--写真-->
 <div class="clearfix width_100p pa_100_0" id="photo">
 
-<section class="col-xs12 col-sm-12 col-md-6">
+<section class="col-xs-12 col-sm-12 col-md-6">
 
 <h2 class="font_sz80p pa_top200p text-center">PHOTO</h2>
 
@@ -222,7 +208,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<section class="col-xs12 col-sm-12 col-md-6">
+<section class="col-xs-12 col-sm-12 col-md-6">
 
 <div class="pa_0p_10p">
 
