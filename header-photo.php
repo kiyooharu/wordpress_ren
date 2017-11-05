@@ -19,7 +19,7 @@
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
 
 <!--google font-->
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins|Questrial" rel="stylesheet">
 <!--google font-->
 
 <?php wp_head(); ?>
@@ -30,12 +30,12 @@
 
 	<div class="site-pusher header_custam">
 
-		<header id="masthead" class="site-header" role="banner" data-parallax="scroll" data-image-src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
+		<header id="masthead" class="site-header back_grade_green" role="banner" data-parallax="scroll" data-image-src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
 			<div class="site-header-wrap">
 
 				<div><?php the_title( '<h1 class="pa_80p color_cf">', '</h1>' ); ?></div>
 
-				<nav id="site-navigation" class="main-navigation bo_60p" role="navigation">
+				<nav id="site-navigation" class="main-navigation bo_60p top_0p" role="navigation">
 					<div class="container">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>

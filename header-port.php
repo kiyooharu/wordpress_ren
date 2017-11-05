@@ -30,7 +30,7 @@
 
 	<div class="site-pusher header_custam">
 
-		<header id="masthead" class="site-header" role="banner" data-parallax="scroll" data-image-src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
+		<header id="masthead" class="site-header back_grade_green" role="banner" data-parallax="scroll" data-image-src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
 			<div class="site-header-wrap">
 
 				<div><?php the_title( '<h1 class="color_cf pa_120p">', '</h1>' ); ?></div>
