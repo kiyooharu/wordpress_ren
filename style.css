@@ -35,7 +35,9 @@ section{
   display: table;
   clear: both;
 }
-
+.text_letter_sp{
+  letter-spacing: 0.1em;
+}
 /*ソリューション*/
 .glyphicon-th-large:before {
     content: "\e010";
@@ -117,8 +119,14 @@ section{
 .pa_20p{
   padding: 20px !important;
 }
+.pa_30p_10p {
+    padding: 30px 10px !important;
+}
 .pa_20p_0{
   padding: 20px 0px !important;
+}
+.pa_20p_60p {
+    padding: 20px 60px !important;
 }
 .pa_10_5p {
   padding: 10px 5px 10px 5px!important;
@@ -280,6 +288,28 @@ a{
 .scloole a:visited { color: #fff; }
 .scloole a:hover { color: #fff; }
 .scloole a:active { color: #fff; }
+
+#work a{
+  display: block;
+  text-decoration: none;
+}
+#work a:hover{
+  opacity: 0.6;
+}
+#photo a{
+  display: block;
+  text-decoration: none;
+}
+#photo a:hover{
+  opacity: 0.6;
+}
+#blog a{
+  display: block;
+  text-decoration: none;
+}
+#blog a:hover{
+  opacity: 0.6;
+}
 
 /*リンク*/
 
@@ -668,7 +698,7 @@ p{
   line-height: 45px;
 }
 .info_top{
-  width: 50%;
+  width: 80%;
   margin: 0 auto !important;
 }
 .info_top li{
@@ -859,9 +889,10 @@ a.post-edit-link{
 .top_0p{
   top:0px;
 }
+.text_ds{
+  color: #000;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
 /*ポートフォリオサイト*/
-
-
-
 
 
