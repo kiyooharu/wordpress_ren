@@ -841,7 +841,7 @@ p{
 .sns_position_inner{
 	position: fixed;
 	right:1%;
-	top:50%;
+	top:45%;
 	font-size: 20px;
 	z-index: 99999;
 }
@@ -859,7 +859,7 @@ p{
           writing-mode: vertical-rl;
     position: fixed;
     left: 1%;
-    top: 35%;
+    top: 30%;
 	z-index: 99999;
 	font-size: 12px;
 }
@@ -937,7 +937,76 @@ a.post-edit-link{
 .space_area {
     padding: 20px 0px;
 }
+.font_sz80p {
+    font-size: 45px !important;
 }
+.site-header .site-branding {
+    width: auto;
+    max-width: 100%;
+}
+.sns_position_inner {
+    right: 3%;
+    top: 10%;
+    font-size: 35px;
+}
+.st-menu .search-form {
+    display: none;
+}
+.st-menu {
+    opacity: 0.9;
+}
+.st-menu .btn-close-home .close-button, .st-menu .btn-close-home .home-button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border-color: #000000 !important;
+    background: #000000 !important;
+}
+.info_top li:nth-child(2){
+    text-align: center;
+    width: 70%;
+}
+.info_top li:nth-child(3){
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+}
+
+@media screen and (max-width: 350px) {
+.font_sz80p {
+    font-size: 40px !important;
+}
+.site-header .site-branding {
+    width: auto;
+    max-width: 100%;
+}
+.line_a {
+    width: 90%;
+    margin-bottom: 5%;
+}
+.line_b {
+    width: 90%;
+    margin-bottom: 5%;
+}
+.pa_50p_20p {
+    padding: 50px 20px 0px;
+}
+.pa_25_10p {
+    padding: 25px 40px;
+}
+.sns_position_inner {
+    right: 3%;
+    top: 10%;
+    font-size: 35px;
+}
+.info_top li:nth-child(2) {
+    width: 65%;
+}
+}
+
+
 
 
 
