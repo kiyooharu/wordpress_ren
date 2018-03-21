@@ -77,6 +77,35 @@ register_sidebar(array(
      'after_title' => '</h3>'
 ));
 
+/*下層メニュー追加*/
+
+register_nav_menu( 'underlayer-menu', '下層メニュー' );
+
+register_sidebar(array(
+     'name' => 'underlayer' ,
+     'id' => 'underlayer' ,
+     'before_widget' => '<div class="widget">',
+     'after_widget' => '</div>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>'
+));
+
+
+/*下層メニュー追加*/
+
+register_nav_menu( 'test-menu', 'テストメニュー' );
+
+register_sidebar(array(
+     'name' => 'test' ,
+     'id' => 'underlayer' ,
+     'before_widget' => '<div class="widget">',
+     'after_widget' => '</div>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>'
+));
+
+
+
 /*戻るボタンここから*/
 
 function scroll_top() {

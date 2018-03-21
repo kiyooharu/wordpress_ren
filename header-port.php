@@ -37,7 +37,7 @@
 
 				<nav id="site-navigation" class="main-navigation bo_60p top_0p" role="navigation">
 					<div class="container">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						    <?php wp_nav_menu( array ( 'theme_location' => 'underlayer-menu' ) ); ?>
 					</div>
 				</nav><!-- #site-navigation -->
 

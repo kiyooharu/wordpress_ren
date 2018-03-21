@@ -21,7 +21,7 @@ ul, ol ,img ,ul, li{
 }
 .ma_pa0p{
   margin: 0 !important;
-  padding: 10px 5px 10px 5px !important;
+  padding: 10px 15px 10px 15px !important;
 }
 section{
   padding-left: 0px !important;
@@ -129,7 +129,7 @@ section{
     padding: 20px 60px !important;
 }
 .pa_10_5p {
-  padding: 10px 5px 10px 5px!important;
+  padding: 10px 15px 10px 15px!important;
 }
 .padding_0_15p{
   padding: 0px 15px 0px 15px;
@@ -894,5 +894,54 @@ a.post-edit-link{
   text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
 }
 /*ポートフォリオサイト*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+.pa_top200p {
+    padding-top: 0px;
+}
+.pa_100_0 {
+    padding: 50px 0px;
+}
+.more a {
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.more a {
+    width: 80%;
+}
+.space_area {
+    padding: 20px 0px;
+}
+}
+
+
+
+
+
 
 

@@ -73,17 +73,17 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 	<ul class="col-xs-12">
-		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p border_s1ddd">
+		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p">
 			<h2 class="text_letter_sp">WEBサイト</h2>
 				<span class="glyphicon glyphicon-list font_sz30 sol_icon" aria-hidden="true"></span>
 			<p class="pa_20p_60p text-left">多種多様な規模や業種のWEBサイトを制作しており、WEBサイト構築を通じてお客様の課題解決に貢献いたします。</p>
 		</li>
-		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p border_s1ddd">
+		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p">
 			<h2 class="text_letter_sp">運営支援</h2>
 				<span class="glyphicon glyphicon-retweet font_sz30 sol_icon" aria-hidden="true"></span>
 			<p class="pa_20p_60p text-left">システムやサーバ保守だけでなく、コンテンツの定期更新、クライアント様のデジタル戦略を支援、貢献いたします。</p>
 		</li>
-		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p border_s1ddd">
+		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p">
 			<h2 class="text_letter_sp">WEBシステム</h2>
 				<span class="glyphicon glyphicon-wrench font_sz30 sol_icon" aria-hidden="true"></span>
 			<p class="pa_20p_60p text-left">CMS,クライアント毎に異なる様々な課題に対して、最新テクノロジーを合わせた効率的なシステムをご提供いたします。</p>
@@ -96,7 +96,6 @@ while($loop->have_posts()): $loop->the_post(); ?>
 </div>
 
 <!--solution-->
-
 
 
 <!--実績-->
@@ -185,9 +184,9 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="width_100p">
 	<ul class="clearfix">
-		<li class="width_50p pull-right text-center"><img src="/wordpress_ren/wp-content/uploads/2017/11/myphoto.jpg" width="500px"></li>
-		<li class="width_50p pull-right text-center line_h50"><p>きよはる</p></li>
-		<li class="width_50p pull-right text-center line_h50"><p>大阪出身2007年から、4年間PCインストラクターに従事。<br>インストラクター時にオフィス関係の資格を多数取得その後、<br>通信関係の仕事に転機通信業に在職しながらDIGITAL HOLLYWOOD入学。<br>WEBおよび、GRAPHICを学び卒業後、デザイナー職へと転職。</p></li>
+		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center"><img src="/wordpress_ren/wp-content/uploads/2017/11/myphoto.jpg" width="500px"></li>
+		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center line_h50"><p>きよはる</p></li>
+		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center line_h50"><p>大阪出身2007年から、4年間PCインストラクターに従事。<br>インストラクター時にオフィス関係の資格を多数取得その後、<br>通信関係の仕事に転機通信業に在職しながらDIGITAL HOLLYWOOD入学。<br>WEBおよび、GRAPHICを学び卒業後、デザイナー職へと転職。</p></li>
 	</ul>
 </div>
 
@@ -265,7 +264,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p">
 
-<section class="pull-left width_50p">
+<section class="col-xs-12 col-sm-12 col-md-6">
 
 <h2 class="text-center font_sz80p pa_top200p text_letter_sp">BLOG</h2>
 
@@ -275,7 +274,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<section class="pull-left width_50p">
+<section class="col-xs-12 col-sm-12 col-md-6">
 
 <?php $loop = new WP_Query(array("post_type" => "post", "posts_per_page" => 4 ));
 
@@ -283,7 +282,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="width_50p flt_l"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-12 col-sm-6 col-md-6 flt_l"<?php post_class(); ?>>
 
 	<ul class="pa_10_5p position_re blog_link">
 

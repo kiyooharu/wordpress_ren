@@ -7,7 +7,7 @@
  * @package Fooding
  */
 
-get_header("single"); ?>
+get_header("port"); ?>
 
 <div class="container">
 	<div id="primary" class="content-area">
