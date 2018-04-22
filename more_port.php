@@ -4,11 +4,11 @@
 Template Name: ポートフォリオ集
 */
 
-get_header(); ?>
+get_header("port"); ?>
 
 <section class="width_100p">
 
-<h2 class="text_c font_sz50p pa_top200p">PORTFOLIO</h2>
+<h2 class="text_c font_sz50p pa_t50p">PORTFOLIO</h2>
 
 <p class="text_c pa_25_10p">今までの過去の実績を載せております。<br>ゆっくりとご覧ください</p>
 

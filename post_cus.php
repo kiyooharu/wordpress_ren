@@ -1,10 +1,12 @@
 <?php
+
 /*
 Template Name: ポートフォリオ
 */
+
 get_header("port"); ?>
 
-<div class="container">
+<div class="container pa_t50p">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

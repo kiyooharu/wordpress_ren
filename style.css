@@ -131,6 +131,9 @@ section{
 .pa_10_5p {
   padding: 10px 15px 10px 15px!important;
 }
+.pa_10_0p {
+  padding: 10px 0px 10px 0px!important;
+}
 .padding_0_15p{
   padding: 0px 15px 0px 15px;
 }
@@ -540,24 +543,12 @@ p{
     position: absolute;
     top: 31px;
 }
-.main-navigation_port {
-    border: none;
-    padding: 0;
-    font-size: 17px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: left;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-}
 
 .main-navigation li{
   border-right: 1px solid #fff;
   padding-right: 30px;
   line-height: 0px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .main-navigation li:nth-child(1){
@@ -944,6 +935,15 @@ a.post-edit-link{
 }
 .more a {
     width: 50%;
+}
+.pa_120p {
+    padding: 80px 0px;
+}
+}
+
+@media screen and (max-width: 782px){
+html {
+    margin-top: 0px !important;
 }
 }
 
