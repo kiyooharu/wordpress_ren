@@ -540,12 +540,29 @@ p{
     position: absolute;
     top: 31px;
 }
+.main-navigation_port {
+    border: none;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
 
 .main-navigation li{
   border-right: 1px solid #fff;
   padding-right: 30px;
   line-height: 0px;
   padding-left: 20px;
+}
+
+.main-navigation li:nth-child(1){
+  border-left: 1px solid #fff;
+  padding-left: 30px;
 }
 
 /************************************

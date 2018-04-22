@@ -35,9 +35,9 @@
 
 				<div><?php the_title( '<h1 class="color_cf pa_120p">', '</h1>' ); ?></div>
 
-				<nav id="site-navigation" class="main-navigation bo_60p top_0p" role="navigation">
+				<nav id="site-navigation" class="main-navigation main-navigation_port" role="navigation">
 					<div class="container">
-						    <?php wp_nav_menu( array ( 'theme_location' => 'underlayer-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'port_head_menu', ) ); ?>
 					</div>
 				</nav><!-- #site-navigation -->
 

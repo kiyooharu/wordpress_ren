@@ -93,7 +93,7 @@ register_sidebar(array(
 
 /*下層メニュー追加*/
 
-register_nav_menu( 'test-menu', 'テストメニュー' );
+register_nav_menu( 'port_head_menu', 'ポートフォリオヘッダー' );
 
 register_sidebar(array(
      'name' => 'test' ,

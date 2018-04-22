@@ -65,9 +65,6 @@ $(document).ready(function(){
 <?php wp_head(); ?>
 </head>
 
-
-
-
 <body <?php body_class(); ?> id="home">
 
 <!--sns-->
@@ -85,7 +82,6 @@ $(document).ready(function(){
 	<?php printf( esc_html__( 'Copyright &copy; %1$s %2$s. All Rights Reserved.', 'fooding' ), date( 'Y' ), get_bloginfo( 'name' ) ); ?>
 </div>
 <!--copyright-->
-
 
 
 <div id="page" class="site">
