@@ -315,8 +315,6 @@ a{
 }
 
 /*リンク*/
-
-
 p{
   margin: 0;
   padding: 0;
@@ -546,14 +544,14 @@ p{
 
 .main-navigation li{
   border-right: 1px solid #fff;
-  padding-right: 30px;
+  padding-right: 3%;
   line-height: 0px;
-  padding-left: 30px;
+  padding-left: 3%;
 }
 
 .main-navigation li:nth-child(1){
   border-left: 1px solid #fff;
-  padding-left: 30px;
+  padding-left: 3%;
 }
 
 /************************************
@@ -938,6 +936,21 @@ a.post-edit-link{
 }
 .pa_120p {
     padding: 80px 0px;
+}
+.header_custam .site-header {
+    min-height: 100vh;
+    height: 100vh;
+    float: none;
+}
+.text_tb_center h1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 3.2rem;
 }
 }
 

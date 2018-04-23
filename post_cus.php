@@ -7,7 +7,7 @@ Template Name: ポートフォリオ
 get_header("port"); ?>
 
 <div class="container pa_t50p">
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-xs-12 col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
 
 		<?php

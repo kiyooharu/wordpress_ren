@@ -49,7 +49,7 @@
 	<div class="site-pusher header_custam">
 
 		<header id="masthead" class="site-header back_grade_green" role="banner" data-parallax="scroll" data-image-src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
-			<div class="site-header-wrap">
+			<div class="site-header-wrap text_tb_center">
 				<div class="container">
 
 				<button class="top-mobile-menu-button mobile-menu-button" data-effect="st-effect-1" type="button"><i class="fa fa-bars"></i></button>
