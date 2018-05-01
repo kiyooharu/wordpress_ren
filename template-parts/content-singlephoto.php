@@ -18,7 +18,7 @@
 	<?php endif; ?>
 
 
-<div class="pa_20p">&nbsp;</p>
+<div class="pa_20p">&nbsp;</div>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title font_sz33">', '</h1>' ); ?>
@@ -28,7 +28,7 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-<div class="pa_20p">&nbsp;</p>
+<div class="pa_20p">&nbsp;</div>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

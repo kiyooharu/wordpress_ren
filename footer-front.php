@@ -27,14 +27,9 @@
 </section>
 <!--more-->
 
-</div>
-
-</div>
-
 </section>
 
-
-
+</div>
 
 
 <div class="col-xs-12 col-sm-12 col-md-12 pa_20p">
@@ -105,10 +100,6 @@ while($loop->have_posts()): $loop->the_post(); ?>
 </div>
 <!--タグクラウド-->
 
-
-
-
-
 </div>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
@@ -126,11 +117,13 @@ while($loop->have_posts()): $loop->the_post(); ?>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 
-	</div> <!-- end .site-pusher -->
-</div><!-- #page -->
+	<!-- end .site-pusher -->
+
+	<!-- #page -->
 
 <?php wp_footer(); ?>
 
+</div>
 
 </body>
 </html>

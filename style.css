@@ -136,6 +136,9 @@ section{
 .pa_10_0p {
   padding: 10px 0px 10px 0px!important;
 }
+.pa_10_0bp {
+  padding: 0px 0px 10px 0px!important;
+}
 .padding_0_15p{
   padding: 0px 15px 0px 15px;
 }
@@ -307,14 +310,12 @@ a{
 .scloole a:active { color: #fff; }
 
 #work a{
-  display: block;
   text-decoration: none;
 }
 #work a:hover{
   opacity: 0.6;
 }
 #photo a{
-  display: block;
   text-decoration: none;
 }
 #photo a:hover{
@@ -638,7 +639,10 @@ footer{
 .move-page-top:hover {
     opacity: 0.85;
 }
-
+.widget-title{
+    font-weight: normal;
+    font-size: 16px;
+}
 /*各ページタイトル装飾*/
 .header_custam .site-header {
     min-height: 300px;
@@ -942,11 +946,52 @@ a.post-edit-link{
 .entry-meta {
     display: none;
 }
+.portforio_real ul{
+    padding: 0px 10px;
+}
 .portforio_real li:nth-child(1) {
-    padding: 0px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 .portforio_real li:nth-child(2) {
-    padding: 0px 0px 20px 0px;
+    color: #fff;
+    padding: 10px 0px 10px 15px;
+    background: red;
+    width: 270px;
+    text-align: left;
+}
+.portforio_real li:nth-child(3) {
+    padding: 15px 0px 20px 30px;
+}
+.portforio_real li:nth-child(4) {
+    color: #fff;
+    padding: 10px 0px 10px 15px;
+    background: red;
+    width: 270px;
+
+    text-align: left;
+}
+.portforio_real li:nth-child(5) {
+    padding: 15px 0px 20px 30px;
+}
+.portforio_real li:nth-child(6) {
+    color: #fff;
+    padding: 10px 0px 10px 15px;
+    background: red;
+    width: 270px;
+    text-align: left;
+}
+.portforio_real li:nth-child(7) {
+    padding: 10px 0px 20px 30px;
+}
+.portforio_real li:nth-child(8) {
+    color: #fff;
+    padding: 10px 0px 10px 15px;
+    background: red;
+    width: 270px;
+    text-align: left;
+}
+.portforio_real li:nth-child(9) {
+    padding: 15px 0px 20px 30px;
 }
 .top_0p{
   top:0px;
@@ -1067,14 +1112,64 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     border-color: #000000 !important;
     background: #000000 !important;
 }
-.info_top li:nth-child(2){
-    text-align: center;
-    width: 70%;
-}
 .info_top li:nth-child(3){
     width: 100%;
     padding: 10px;
     text-align: left;
+}
+.portforio_real li:nth-child(1) {
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+}
+.portforio_real li:nth-child(2) {
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    background: red;
+    width: 100%;
+    text-align: center;
+}
+.portforio_real li:nth-child(3) {
+    padding: 15px 0px 20px 0px;
+    text-align: center;
+}
+.portforio_real li:nth-child(4) {
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    background: red;
+    width: 100%;
+    text-align: center;
+}
+.portforio_real li:nth-child(5) {
+    padding: 15px 0px 20px 0px;
+    text-align: center;
+}
+.portforio_real li:nth-child(6) {
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    background: red;
+    width: 100%;
+    text-align: center;
+}
+.portforio_real li:nth-child(7) {
+    padding: 15px 0px 20px 0px;
+    text-align: center;
+}
+.portforio_real li:nth-child(8) {
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    background: red;
+    width: 100%;
+    text-align: center;
+}
+.portforio_real li:nth-child(9) {
+    padding: 15px 0px 20px 0px;
+    text-align: center;
+}
+h1.entry-title {
+    text-align: center;
+}
+.portforio_real ul {
+    padding: 0px 0px;
 }
 }
 

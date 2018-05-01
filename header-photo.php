@@ -26,6 +26,23 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<!--sns-->
+<div class="sns_position">
+	<ul class="sns_position_inner">
+		<a href="https://www.facebook.com/kiyokoharu"><li class="icon-facebook2 margin_bt50p color_cf"></li></a>
+		<a href=""><li class="icon-instagram margin_bt50p color_cf"></li></a>
+		<a href=""><li class="icon-github margin_bt50p color_cf"></li></a>
+	</ul>
+</div>
+<!--sns-->
+
+<!--copyright-->
+<div class="site-copyright color_cf">
+	<?php printf( esc_html__( 'Copyright &copy; %1$s %2$s. All Rights Reserved.', 'fooding' ), date( 'Y' ), get_bloginfo( 'name' ) ); ?>
+</div>
+<!--copyright-->
+
 <div id="page" class="site">
 
 	<!-- begin .header-mobile-menu -->
@@ -56,5 +73,6 @@
 			</div> <!-- .site-header-wrap -->
 		</header><!-- #masthead -->
 
+	</div>
 
 		<div id="content" class="site-content">

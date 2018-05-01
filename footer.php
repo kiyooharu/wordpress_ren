@@ -34,12 +34,11 @@
 
 		</footer><!-- #colophon -->
 
-<?php get_footer('front'); ?>
-
-	</div> <!-- end .site-pusher -->
-</div><!-- #page -->
+<?php get_footer('blog'); ?>
 
 <?php wp_footer(); ?>
+
+</div>
 
 </body>
 </html>

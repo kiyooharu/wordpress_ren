@@ -37,6 +37,14 @@
 </div>
 <!--sns-->
 
+<!--copyright-->
+<div class="site-copyright color_cf">
+	<?php printf( esc_html__( 'Copyright &copy; %1$s %2$s. All Rights Reserved.', 'fooding' ), date( 'Y' ), get_bloginfo( 'name' ) ); ?>
+</div>
+<!--copyright-->
+
+<div id="page" class="site">
+
 	<!-- begin .header-mobile-menu -->
 	<nav class="st-menu st-effect-1" id="menu-3">
 		<?php wp_nav_menu( array('theme_location' => 'port_head_menu','echo' => true,'items_wrap' => '<ul>%3$s</ul>')); ?>
@@ -64,7 +72,7 @@
 
 			</div> <!-- .site-header-wrap -->
 		</header><!-- #masthead -->
-	
+
 	</div>
 
 		<div id="content" class="site-content">

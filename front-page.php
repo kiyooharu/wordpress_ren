@@ -125,7 +125,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
 	<ul>
 
-	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 pa_10_0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
+	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 pa_10_0bp"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
 		<ul>
 			<li class="position_ab top_0p right_0p z_in100 back_cred pa_5p_20p color_cf"><?php echo esc_html( $post->portforio_s ); ?></li>
 
@@ -287,7 +287,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 flt_l ma_bt20p"<?php post_class(); ?>>
 
-	<ul class="pa_10_0p position_re blog_link">
+	<ul class="position_re blog_link">
 
 	<li><p class="width_100p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p></li>
 
