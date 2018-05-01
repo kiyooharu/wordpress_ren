@@ -13,6 +13,7 @@ get_header(); ?>
 <!--インフォメーションここから-->
 
 <div class="clearfix width_100p" id="start">
+</div>
 
 <section class="width_100p info_inner">
 
@@ -87,9 +88,12 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	</ul>
 </div>
 
+</div>
+
 </section>
 
 </div>
+
 
 <!--solution-->
 
@@ -118,7 +122,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs-12 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
 	<ul>
 
 	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 pa_10_0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
@@ -168,9 +172,9 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--プロフィール-->
 
-<h2 class="font_sz80p text-center text_letter_sp color_cf">PROFILE</h2>
+<h2 class="font_sz80p text-center text_letter_sp cf_text_bk">PROFILE</h2>
 
-<div class="line_b"></div>
+<div class="line_c"></div>
 
 <p class="text-center"><span class="glyphicon glyphicon-user" aria-hidden="true">自己紹介</span></p>
 
@@ -201,7 +205,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <h2 class="font_sz80p pa_top200p text-center text_letter_sp">PHOTO</h2>
 
-<div class="line_a"></div>
+<div class="line_c"></div>
 
 <p class="text-center"><span class="glyphicon glyphicon-camera" aria-hidden="true">趣味の写真</span><br></p>
 
@@ -217,18 +221,21 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs12 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
 	<ul>
 
 	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 pa_10_0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
 		<ul>
+
+			<li class="position_ab top_90p left_10p z_in100 font_web font_sz33"><?php echo esc_html( $post->syurui ); ?></li>
+
 			<li class="width_100p text-left">
-				<h3 class="font_20p text_dno"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+				<h3 class="font_20p text_dno">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+				</h3>
 			</li>
 		</ul>
 	</li>
-
-	<li class="width_90p"><?php the_excerpt(); ?></li>
 
 	</ul>
 </div>
@@ -264,7 +271,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <h2 class="text-center font_sz80p pa_top200p text_letter_sp">BLOG</h2>
 
-<div class="line_b"></div>
+<div class="line_c"></div>
 
 <p class="text-center pa_25_10p"><span class="glyphicon glyphicon-book" aria-hidden="true">ブログ</span></p>
 
@@ -278,7 +285,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs-12 col-sm-6 col-md-6 flt_l"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 flt_l ma_bt20p"<?php post_class(); ?>>
 
 	<ul class="pa_10_0p position_re blog_link">
 
@@ -300,13 +307,18 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	$alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true);
 	$image_title = $attachment->post_title;
 ?>
-<li class="pull-left width_15p"><p class="width_80p"><img src="<?php echo $image[0]; ?>" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" alt="<?php echo $alt; ?>" title="<?php echo $image_title; ?>" / class="border_ra50"></p></li>
+<ul>
+<li class="pull-left width_15p">
+	<p class="width_80p">
+	<img src="<?php echo $image[0]; ?>" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" alt="<?php echo $alt; ?>" title="<?php echo $image_title; ?>" / class="border_ra50">
+</p>
+</li>
 <!--カスタムフィールド画像出力-->
-
-	<li class="pull-left line_h50 ma_l10p"><?php the_time('Y/m/d'); ?></li>
+<li class="pull-left line_h50 ma_l10p"><?php the_time('Y/m/d'); ?></li>
+</ul>
 </div>
-
-	<li><?php the_excerpt(); ?></li>
+	<ul>
+		<li><?php the_excerpt(); ?></li>
 	</ul>
 </div>
 
@@ -314,45 +326,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </div>
 
-<div class="space_area">
-	<p>&nbsp;</p>
-</div>
-
 </section>
 
 </div>
 
 </div>
-
-<section class="pull-left width_100p back_grade_green pa_t50p" id="contact">
-
-<h2 class="text-center font_sz80p color_cf text_letter_sp">CONTACT</h2>
-
-<div class="line_a"></div>
-
-<p class="text-center pa_25_10p color_cf">皆様からのお問い合わせ、WEBサイト制作の依頼をお待ちしております。</p>
-
-<!--more-->
-<section class="pa_bt2050p">
-	<div class="cl-effect-10 more">
-		<a href="<?php echo get_permalink( get_page_by_path( 'portforio_all' )->ID ); ?>" data-hover="more"><span>more</span></a>
-	</div>
-</section>
-<!--more-->
-
-<!--
-<div class="tag pa_20p">
-	<ul>
-	<li class="width_50p text-center ma_auto pa_20p"><br><?php wp_tag_cloud( $args ); ?></li>
-	</ul>
-</div>
--->
-
-</div>
-
-</div>
-
-</section>
 
 </div>
 

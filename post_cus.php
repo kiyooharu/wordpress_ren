@@ -28,5 +28,4 @@ get_header("port"); ?>
 
 </div>
 
-<?php
-get_footer("port");
+<?php get_footer('front');

@@ -37,8 +37,6 @@
 </div>
 <!--sns-->
 
-<div id="page" class="site">
-
 	<!-- begin .header-mobile-menu -->
 	<nav class="st-menu st-effect-1" id="menu-3">
 		<?php wp_nav_menu( array('theme_location' => 'port_head_menu','echo' => true,'items_wrap' => '<ul>%3$s</ul>')); ?>
@@ -66,6 +64,7 @@
 
 			</div> <!-- .site-header-wrap -->
 		</header><!-- #masthead -->
-
+	
+	</div>
 
 		<div id="content" class="site-content">

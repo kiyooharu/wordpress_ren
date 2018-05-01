@@ -2,7 +2,7 @@
 /*
 Template Name: 問い合わせ
 */
-get_header(); ?>
+get_header("photo"); ?>
 
 <div class="container">
 	<div id="primary" class="content-area width_100p">
@@ -26,4 +26,4 @@ get_header(); ?>
 
 </div>
 
-<?php get_footer('contact');
+<?php get_footer('front'); ?>

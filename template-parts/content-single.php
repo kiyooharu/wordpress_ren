@@ -44,8 +44,4 @@
     ) );
 	?>
 
-	<footer class="entry-footer">
-		<?php fooding_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
 </article><!-- #post-## -->

@@ -22,30 +22,6 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins|Questrial" rel="stylesheet">
 <!--google font-->
 
-<!--フェードイン
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-$(function(){
-    $(window).load(function(){
-        var delaySpeed = 100;
-        var fadeSpeed = 500;
-        $('ul li').each(function(i){
-            $(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
-        });
-    });
-});
-</script>
-フェードイン-->
-
-<script>
-/* Demo purposes only */
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
-</script>
-
 
 <script>
 $(document).ready(function(){
@@ -65,7 +41,7 @@ $(document).ready(function(){
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> id="home">
+<body <?php body_class(); ?> id="home" class="container-fluid">
 
 <!--sns-->
 <div class="sns_position">
@@ -127,6 +103,7 @@ $(document).ready(function(){
 					</div><!-- .site-branding -->
 				</div>
 
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="container">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -140,5 +117,4 @@ $(document).ready(function(){
 
 
 		</header><!-- #masthead -->
-
-
+	</div>

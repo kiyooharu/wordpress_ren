@@ -123,4 +123,37 @@ function enqueue_my_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); // 親テーマのcss
     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/icon.css', array('parent-style')); // 子テーマのcss
 }
+
+/*フッターfacebook*/
+
+/* フッターウィジェットの作成 */
+add_action('init', 'my_register_sidebar');
+function my_register_sidebar() {
+    register_sidebars(1,
+        array(
+        'name'=>'フッターウィジェット1',
+        'before_widget' => '<ul><li>',
+        'after_widget' => '</li></ul>',
+        ));
+    register_sidebars(1,
+        array(
+        'name'=>'フッターウィジェット2',
+        'before_widget' => '<ul><li>',
+        'after_widget' => '</li></ul>',
+        ));
+    register_sidebars(1,
+        array(
+        'name'=>'フッターウィジェット3',
+        'before_widget' => '<ul><li>',
+        'after_widget' => '</li></ul>',
+        ));
+    register_sidebars(1,
+        array(
+        'name'=>'フッターウィジェット4',
+        'before_widget' => '<ul><li>',
+        'after_widget' => '</li></ul>',
+        ));
+}
+
+
 ?>

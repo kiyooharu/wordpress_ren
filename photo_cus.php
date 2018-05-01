@@ -32,5 +32,4 @@ get_header("photo"); ?>
 </div>
 
 
-<?php
-get_footer("photo");
+<?php get_footer('front');

@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: ポートフォリオ集
+Template Name: ポートフォリオ
 */
 
 get_header("port"); ?>

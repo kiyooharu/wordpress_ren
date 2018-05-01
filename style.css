@@ -106,12 +106,14 @@ section{
 .margin_bt50p{
   margin-bottom: 50% !important;
 }
+.ma_auto{
+  margin: 0 auto;
+}
 /*margin*/
 
 .wrap{
   padding: 0px 10px;
 }
-
 /*padding*/
 .pa_10p{
   padding: 10px !important;
@@ -153,7 +155,7 @@ section{
   padding: 80px;
 }
 .pa_100_0{
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 .pa_120p{
   padding: 120px 0px;
@@ -191,6 +193,15 @@ section{
 .font_web{
   font-weight: bold;
 }
+.font_sz12{
+  font-size: 12px !important;
+}
+.font_sz18{
+  font-size: 18px !important;
+}
+.font_sz20{
+  font-size: 20px !important;
+}
 .font_sz33{
   font-size: 33px !important;
 }
@@ -202,6 +213,9 @@ section{
 }
 .font_sz80p{
   font-size: 80px !important;
+}
+.sp_font_16p{
+  font-size: 16px;
 }
 /*フォントサイズ*/
 
@@ -307,7 +321,6 @@ a{
   opacity: 0.6;
 }
 #blog a{
-  display: block;
   text-decoration: none;
 }
 #blog a:hover{
@@ -349,11 +362,17 @@ p{
 }
 
 /*カラー設定*/
+.color_cd{
+  color: #9e9c9c;
+}
 .color_cf{
   color: #fff;
 }
 .cf_red{
   color:red;
+}
+.cf_text_bk{
+  color: #111;
 }
 /*カラー設定*/
 
@@ -434,6 +453,9 @@ p{
 .width_120p{
   width: 1200px;
 }
+.sp_width_100p{
+    width: 100%;
+}
 /*幅設定*/
 
 /*高さ指定*/
@@ -448,6 +470,9 @@ p{
 }
 .right_0p{
   right: 0px;
+}
+.left_0p{
+  left: 0px;
 }
 .top_10p{
   top: 10px;
@@ -488,6 +513,9 @@ p{
 .ma_auto{
   margin: 0 auto !important;
 }
+.ma_bt20p {
+  margin-bottom: 20px;
+}
 .text_c{
   text-align: center;
 }
@@ -499,6 +527,9 @@ p{
 }
 .position_ab{
   position: absolute !important;
+}
+.dis_inb{
+  display: inline-block;
 }
 /*位置設定*/
 
@@ -546,12 +577,12 @@ p{
   border-right: 1px solid #fff;
   padding-right: 3%;
   line-height: 0px;
-  padding-left: 3%;
+  padding-left: 25px;
 }
 
 .main-navigation li:nth-child(1){
   border-left: 1px solid #fff;
-  padding-left: 3%;
+  padding-left: 25px;
 }
 
 /************************************
@@ -582,7 +613,13 @@ p{
 #footer-menu ul .sub-menu{
   display: none;
 }
-
+footer{
+  background: #ddd;
+  border: solid 1px #ddd;
+}
+.site-footer .site-info {
+    padding: 20px 0;
+}
 /*戻るボタン*/
 .page-top {
     margin: 0;
@@ -730,21 +767,29 @@ p{
 /*フェードイン*/
 
 .info_style{
-    color: #fff;
-    background: #424242;
-    padding: 5px 15px;
+  color: #fff;
+  background: #424242;
+  padding: 5px 15px;
 }
 .line_a{
   width: 30%;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #ccc;
   margin: 0 auto;
   margin-bottom: 2%;
 }
 .line_b{
-  width: 30%;
-  border-bottom: solid 1px #fff;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
   margin: 0 auto;
   margin-bottom: 2%;
+  margin-top: 2%;
+}
+.line_c{
+  width: 30%;
+  border-bottom: solid 1px #ccc;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 /*front-page.html*/
 
@@ -837,7 +882,18 @@ p{
 /*more*/
 
 /*footer*/
-
+.foot_menu li {
+  line-height: 44px;
+  width: 97%;
+  margin: 0 auto !important;
+}
+.foot_menu_b li {
+  width: 97%;
+  margin: 0 auto !important;
+}
+.foot_menu h2{
+  display: none;
+}
 #footer-menu li{
   display: inline-block;
 }
@@ -923,8 +979,13 @@ a.post-edit-link{
 
 
 
-
 @media screen and (max-width: 990px) {
+.foot_menu li {
+  width: 97%;
+}
+.sp_width_200p{
+    width: 200px;
+}
 .pa_top200p {
     padding-top: 0px;
 }
@@ -952,6 +1013,16 @@ a.post-edit-link{
   width: 80%;
   height: 3.2rem;
 }
+.photo_title h1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 3.2rem;
+}
 }
 
 @media screen and (max-width: 782px){
@@ -961,6 +1032,9 @@ html {
 }
 
 @media screen and (max-width: 600px) {
+.sp_width_200p{
+    width: 150px;
+}
 .more a {
     width: 80%;
 }
@@ -1004,7 +1078,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 }
 
+@media screen and (max-width: 450px) {
+.pa_lr0p{
+    padding-left:0px;
+    padding-right: 0px;
+}
+}
+
 @media screen and (max-width: 350px) {
+.sp_width_200p{
+    width: 150px;
+}
 .font_sz80p {
     font-size: 40px !important;
 }
@@ -1035,12 +1119,3 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     width: 65%;
 }
 }
-
-
-
-
-
-
-
-
-

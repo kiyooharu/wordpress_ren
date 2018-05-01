@@ -12,7 +12,7 @@
  * @package Fooding
  */
 
-get_header(); ?>
+get_header("photo"); ?>
 
 <div class="container">
 	<div id="primary" class="content-area">

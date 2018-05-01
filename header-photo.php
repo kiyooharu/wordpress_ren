@@ -28,8 +28,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-<div id="page" class="site">
-
 	<!-- begin .header-mobile-menu -->
 	<nav class="st-menu st-effect-1" id="menu-3">
 		<?php wp_nav_menu( array('theme_location' => 'port_head_menu','echo' => true,'items_wrap' => '<ul>%3$s</ul>')); ?>
@@ -45,7 +43,7 @@
 
 				<button class="top-mobile-menu-button mobile-menu-button" data-effect="st-effect-1" type="button"><i class="fa fa-bars"></i></button>
 
-				<div><?php the_title( '<h1 class="color_cf pa_120p">', '</h1>' ); ?></div>
+				<div class="photo_title"><?php the_title( '<h1 class="color_cf pa_120p">', '</h1>' ); ?></div>
 
 				</div>
 
