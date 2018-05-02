@@ -7,7 +7,7 @@
  * @package Fooding
  */
 
-get_header("single"); ?>
+get_header("port"); ?>
 
 <div class="container">
 	<div id="primary" class="content-area">
@@ -20,6 +20,7 @@ get_header("single"); ?>
 
 			<header class="page-header">
 				<?php
+					wp_get_archives(array('show_post_count' => 1));
 					the_archive_title( '<h1 class="entry-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>

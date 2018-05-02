@@ -13,13 +13,9 @@
 
 	</div><!-- #content -->
 
-	<!--戻るボタン-->
-	<div id="page-top" class="page-top width_100p text_c">
-		<ul>
-			<li class="width_100p ma_auto back_mizublue"><a href="#page" hid="move-page-top" class="move-page-top" rel="m_PageScroll2id"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></li>
-	  </ul>
-	</div>
-	<!--戻るボタン-->
+<!--戻るボタン-->
+<?php get_template_part( 'back_bt'); ?>
+<!--戻るボタン-->
 
 <!--フッターメニュー-->
 <div id="footer-menu" class="pa_20p footer_back">

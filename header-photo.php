@@ -19,38 +19,28 @@
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
 
 <!--google font-->
-<link href="https://fonts.googleapis.com/css?family=Poppins|Questrial" rel="stylesheet">
+<?php get_template_part( 'google_font'); ?>
 <!--google font-->
 
+<!--loading-->
+<?php get_template_part( 'loading'); ?>
+<!--loading-->
+
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
 
-<!--sns-->
-<div class="sns_position">
-	<ul class="sns_position_inner">
-		<a href="https://www.facebook.com/kiyokoharu"><li class="icon-facebook2 margin_bt50p color_cf"></li></a>
-		<a href=""><li class="icon-instagram margin_bt50p color_cf"></li></a>
-		<a href=""><li class="icon-github margin_bt50p color_cf"></li></a>
-	</ul>
-</div>
-<!--sns-->
-
-<!--copyright-->
-<div class="site-copyright color_cf">
-	<?php printf( esc_html__( 'Copyright &copy; %1$s %2$s. All Rights Reserved.', 'fooding' ), date( 'Y' ), get_bloginfo( 'name' ) ); ?>
-</div>
-<!--copyright-->
+<!--sns_copy-->
+<?php get_template_part( 'sns_copy'); ?>
+<!--sns_copy-->
 
 <div id="page" class="site">
 
-	<!-- begin .header-mobile-menu -->
-	<nav class="st-menu st-effect-1" id="menu-3">
-		<?php wp_nav_menu( array('theme_location' => 'port_head_menu','echo' => true,'items_wrap' => '<ul>%3$s</ul>')); ?>
-		<?php get_search_form( $echo = true ); ?>
-	</nav>
-	<!-- end .header-mobile-menu -->
+<!--header_mobile_menu-->
+<?php get_template_part( 'header_mobile_menu'); ?>
+<!--header_mobile_menu-->
 
 	<div class="site-pusher header_custam">
 

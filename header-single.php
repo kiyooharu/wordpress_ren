@@ -19,13 +19,22 @@
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
 
 <!--google font-->
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<?php get_template_part( 'google_font'); ?>
 <!--google font-->
+
+<!--loading-->
+<?php get_template_part( 'loading'); ?>
+<!--loading-->
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+<!--sns_copy-->
+<?php get_template_part( 'sns_copy'); ?>
+<!--sns_copy-->
+
 <div id="page" class="site">
 
 	<div class="site-pusher header_custam">

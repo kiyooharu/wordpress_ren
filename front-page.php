@@ -44,8 +44,6 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--インフォメーションここまで-->
 
-
-
 <!--solution-->
 
 <div class="clearfix width_100p pa_100_0" id="solution">
@@ -254,7 +252,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <!--more-->
 <section>
 	<div class="cl-effect-10 more">
-		<a href="<?php echo get_permalink( get_page_by_path( 'portforio_all' )->ID ); ?>" data-hover="more"><span>more</span></a>
+		<a href="<?php echo get_permalink( get_page_by_path( 'photo_all' )->ID ); ?>" data-hover="more"><span>more</span></a>
 	</div>
 </section>
 <!--more-->
