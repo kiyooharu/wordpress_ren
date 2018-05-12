@@ -36,7 +36,9 @@
 
 <?php get_footer('blog'); ?>
 
+<!--
 <?php wp_footer(); ?>
+-->
 
 </div>
 

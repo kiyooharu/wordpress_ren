@@ -4,7 +4,7 @@ Template Name: 写真
 */
 get_header("photo"); ?>
 
-<div class="container">
+<div class="container pa_t50p">
 
 <div class="photo_single">
 

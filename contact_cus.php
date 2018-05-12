@@ -4,7 +4,7 @@ Template Name: 問い合わせ
 */
 get_header("photo"); ?>
 
-<div class="container">
+<div class="container pa_t50p contact">
 	<div id="primary" class="content-area width_100p">
 		<main id="main" class="site-main" role="main">
 

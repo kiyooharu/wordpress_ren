@@ -62,7 +62,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<p>&nbsp;</p>
 </div>
 
-<section class="col-xs-12 col-sm-12 col-md-12">
+<section class="col-xs-12 col-sm-12 col-md-12 back_cf">
 
 <div class="pa_0p_10p">
 
@@ -76,12 +76,12 @@ while($loop->have_posts()): $loop->the_post(); ?>
 		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p">
 			<h2 class="text_letter_sp">運営支援</h2>
 				<span class="glyphicon glyphicon-retweet font_sz30 sol_icon" aria-hidden="true"></span>
-			<p class="pa_20p_60p text-left">システムやサーバ保守だけでなく、コンテンツの定期更新、クライアント様のデジタル戦略を支援、貢献いたします。</p>
+			<p class="pa_20p_60p text-left">コンテンツの定期更新、クライアント様のデジタル戦略を支援、貢献いたします。</p>
 		</li>
 		<li class="col-lg-4 col-md-6 col-xs-12 text-center back_cf pa_50p_20p">
 			<h2 class="text_letter_sp">WEBシステム</h2>
 				<span class="glyphicon glyphicon-wrench font_sz30 sol_icon" aria-hidden="true"></span>
-			<p class="pa_20p_60p text-left">CMS,クライアント毎に異なる様々な課題に対して、最新テクノロジーを合わせた効率的なシステムをご提供いたします。</p>
+			<p class="pa_20p_60p text-left">クライアント毎に異なる様々な課題に対して、最新テクノロジーを合わせ効率的なシステムをご提供いたします。</p>
 		</li>
 	</ul>
 </div>

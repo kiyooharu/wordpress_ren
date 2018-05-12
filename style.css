@@ -38,6 +38,17 @@ section{
 .text_letter_sp{
   letter-spacing: 0.1em;
 }
+
+/*menu*/
+.menu{
+  padding-bottom: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: none;
+  box-shadow: none;
+}
+
 /*ソリューション*/
 .glyphicon-th-large:before {
     content: "\e010";
@@ -176,7 +187,7 @@ section{
   padding: 5px 20px 5px 20px;
 }
 .pa_t50p{
-  padding-top:50px;
+  padding-top:50px !important;
 }
 .pa_bt2050p{
     padding: 20px 0px 50px 0px!important;
@@ -275,6 +286,15 @@ a{
 .contact a:hover {
   background-position:  -100% 0;
   color: #fff;
+}
+.contact{
+  width: 100%;
+  max-width: 100%;
+}
+.contact .site-main{
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 #footer-menu a:link { color: #fff; }
@@ -576,17 +596,18 @@ p{
     position: absolute;
     top: 31px;
 }
-
 .main-navigation li{
   border-right: 1px solid #fff;
   padding-right: 3%;
   line-height: 0px;
   padding-left: 25px;
 }
-
 .main-navigation li:nth-child(1){
   border-left: 1px solid #fff;
   padding-left: 25px;
+}
+.main-navigation li {
+    float: none;
 }
 
 /************************************
@@ -603,17 +624,14 @@ p{
   display: inline;
   list-style: outside none none;
 }
-
 #footer-menu ul li::before {
-    content: "|";
-    padding: 0 0.6em;
+  content: "|";
+  padding: 0 0.6em;
 }
-
 #footer-menu ul li:first-child::before{
   content: "";
   padding: 0;
 }
-
 #footer-menu ul .sub-menu{
   display: none;
 }
@@ -622,42 +640,41 @@ footer{
   border: solid 1px #ddd;
 }
 .site-footer .site-info {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 /*戻るボタン*/
 .page-top {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 .move-page-top {
-    display: block;
-    line-height: 50px;
-    text-decoration: none;
-    cursor: pointer;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+  display: block;
+  line-height: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
 }
-
 .move-page-top:hover {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 .widget-title{
-    font-weight: normal;
-    font-size: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
 }
 /*各ページタイトル装飾*/
 .header_custam .site-header {
-    min-height: 300px;
-    height: 300px;
-    float: none;
+  min-height: 300px;
+  height: 300px;
+  float: none;
 }
 .bo_60p{
   bottom: 60px;
 }
 .site-content {
-    clear: both;
-    padding: 0px 0 0px;
+  clear: both;
+  padding: 0px 0 0px;
 }
 .back_color001{
   background-color: #ddd;
@@ -748,7 +765,7 @@ footer{
   line-height: 45px;
 }
 .info_top{
-  width: 80%;
+  width: 100%;
   margin: 0 auto !important;
 }
 .info_top li{
@@ -923,78 +940,96 @@ footer{
 
 /*copyright*/
 .site-copyright {
-      -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-    position: fixed;
-    left: 1%;
-    top: 30%;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: fixed;
+  left: 1%;
+  top: 30%;
 	z-index: 99999;
 	font-size: 12px;
 }
 /*copyright*/
 
-
-
+/*blog*/
+.blog .content-area {
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 0 40px;
+  clear: both;
+}
+.blog{
+  width: 100%;
+  max-width: 100%;
+}
+.blog section{
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.blog .site-main{
+  text-align: center;
+}
+/*blog*/
 
 /*ポートフォリオサイト*/
 .content-area {
-    width: 100%;
-    padding-top: 50px;
-
+  width: 100%;
 }
 a.post-edit-link{
-    display: none;
+  display: none;
 }
 .entry-meta {
-    display: none;
+  display: none;
 }
 .portforio_real ul{
-    padding: 0px 10px;
+  padding: 0px 10px;
 }
 .portforio_real li:nth-child(1) {
-    padding: 10px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 .portforio_real li:nth-child(2) {
-    color: #fff;
-    padding: 10px 0px 10px 15px;
-    background: red;
-    width: 270px;
-    text-align: left;
+  color: #fff;
+  padding: 10px 0px 10px 15px;
+  background: red;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto !important;
 }
 .portforio_real li:nth-child(3) {
-    padding: 15px 0px 20px 30px;
+  padding: 15px 0px 20px 30px;
 }
 .portforio_real li:nth-child(4) {
-    color: #fff;
-    padding: 10px 0px 10px 15px;
-    background: red;
-    width: 270px;
-
-    text-align: left;
+  color: #fff;
+  padding: 10px 0px 10px 15px;
+  background: red;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto !important;
 }
 .portforio_real li:nth-child(5) {
-    padding: 15px 0px 20px 30px;
+  padding: 15px 0px 20px 30px;
 }
 .portforio_real li:nth-child(6) {
-    color: #fff;
-    padding: 10px 0px 10px 15px;
-    background: red;
-    width: 270px;
-    text-align: left;
+  color: #fff;
+  padding: 10px 0px 10px 15px;
+  background: red;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto !important;
 }
 .portforio_real li:nth-child(7) {
-    padding: 10px 0px 20px 30px;
+  padding: 10px 0px 20px 30px;
 }
 .portforio_real li:nth-child(8) {
-    color: #fff;
-    padding: 10px 0px 10px 15px;
-    background: red;
-    width: 270px;
-    text-align: left;
+  color: #fff;
+  padding: 10px 0px 10px 15px;
+  background: red;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto !important;
 }
 .portforio_real li:nth-child(9) {
-    padding: 15px 0px 20px 30px;
+  padding: 15px 0px 20px 30px;
 }
 .top_0p{
   top:0px;
@@ -1002,6 +1037,10 @@ a.post-edit-link{
 .text_ds{
   color: #000;
   text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+.portforio .content-area{
+  text-align: center;
+  width: 100%;
 }
 /*ポートフォリオサイト*/
 
@@ -1031,6 +1070,15 @@ a.post-edit-link{
 }
 /*ローディング画面*/
 
+/*contact*/
+.st-menu .btn-close-home .close-button, .st-menu .btn-close-home .home-button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+label {
+    display: block !important;
+    width: 100% !important;
+}
 
 @media screen and (max-width: 990px) {
 .foot_menu li {
