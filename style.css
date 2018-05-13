@@ -244,7 +244,7 @@ section{
 
 .back_bt a:link { color: #ddd !important }
 .back_bt a:visited { color: #ddd !important }
-.back_bt a:hover { color: #ddd !important }
+.back_bt a:hover { color: #ca6262 !important }
 .back_bt a:active { color: #ddd !important }
 .back_bt a{
   text-decoration: none;
@@ -252,7 +252,7 @@ section{
 
 a:link { color: #0000ff; }
 a:visited { color: #000080; }
-a:hover { color: #ff0000; }
+a:hover { color: #ca6262 }
 a:active { color: #ff8000; }
 a{
   text-decoration: none;
@@ -260,7 +260,7 @@ a{
 
 #footer-menu a:link { color: #000 !important }
 #footer-menu a:visited { color: #000 !important }
-#footer-menu a:hover { color: #000 !important }
+#footer-menu a:hover { color: #ca6262 !important }
 #footer-menu a:active { color: #000 !important }
 #footer-menu a{
   text-decoration: none;
@@ -268,7 +268,7 @@ a{
 
 .main-navigation a:link { color: #fff !important }
 .main-navigation a:visited { color: #fff !important }
-.main-navigation a:hover { color: #fff !important }
+.main-navigation a:hover { color: #ca6262 !important }
 .main-navigation a:active { color: #fff !important }
 
 .contact a{
@@ -350,6 +350,28 @@ a{
 #blog a:hover{
   opacity: 0.6;
 }
+
+/*animetion*/
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-100px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-100px); -ms-transform: translateY(-100px); transform: translateY(-100px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+/*animetion*/
 
 /*リンク*/
 p{

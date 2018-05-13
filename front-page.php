@@ -27,11 +27,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 	<ul class="pa_30p_10p clearfix info_top">
 
-		<li class="pull-left info_style"><?php the_title(); ?></li>
+		<li class="pull-left info_style col-xs-3 col-sm-1 col-md-1 text-center"><?php the_title(); ?></li>
 
-		<li class="pull-left lineh31"><?php the_time('Y/m/d'); ?></li>
+		<li class="pull-left lineh31 col-xs-6 col-sm-1 col-md-1"><?php the_time('Y/m/d'); ?></li>
 
-		<li class="pull-left lineh31"><?php the_excerpt(); ?></li>
+		<li class="pull-left lineh31 col-xs-12 col-sm-12 col-md-3"><?php the_excerpt(); ?></li>
 
 	</ul>
 </div>
@@ -50,11 +50,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <section class="col-xs-12 col-sm-12 col-md-12">
 
-<h2 class="font_sz80p text-center text_letter_sp">SOLUTION</h2>
+<h2 class="font_sz80p text-center text_letter_sp" id="animation">SOLUTION</h2>
 
 <div class="line_a"></div>
 
-<p class="text-center"><span class="glyphicon glyphicon-th-large" aria-hidden="true">ソリューション</span><br></p>
+<p class="text-center" id="animation_b"><span class="glyphicon glyphicon-th-large" aria-hidden="true">ソリューション</span><br></p>
 
 </section>
 
@@ -102,11 +102,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <section class="col-xs-12 col-sm-12 col-md-6">
 
-<h2 class="font_sz80p pa_top200p text-center text_letter_sp">WORK</h2>
+<h2 class="font_sz80p pa_top200p text-center text_letter_sp" id="animation_c">WORK</h2>
 
 <div class="line_a"></div>
 
-<p class="text-center"><span class="glyphicon glyphicon-bookmark" aria-hidden="true">過去の実績</span></p>
+<p class="text-center" id="animation_d"><span class="glyphicon glyphicon-bookmark" aria-hidden="true">過去の実績</span></p>
 
 </section>
 
@@ -170,11 +170,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--プロフィール-->
 
-<h2 class="font_sz80p text-center text_letter_sp cf_text_bk">PROFILE</h2>
+<h2 class="font_sz80p text-center text_letter_sp cf_text_bk" id="animation_e">PROFILE</h2>
 
 <div class="line_c"></div>
 
-<p class="text-center"><span class="glyphicon glyphicon-user" aria-hidden="true">自己紹介</span></p>
+<p class="text-center" id="animation_e"><span class="glyphicon glyphicon-user" aria-hidden="true">自己紹介</span></p>
 
 <div class="space_area_b">
 	<p>&nbsp;</p>
@@ -201,11 +201,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <section class="col-xs-12 col-sm-12 col-md-6 pull-right">
 
-<h2 class="font_sz80p pa_top200p text-center text_letter_sp">PHOTO</h2>
+<h2 class="font_sz80p pa_top200p text-center text_letter_sp" id="animation_f">PHOTO</h2>
 
 <div class="line_c"></div>
 
-<p class="text-center"><span class="glyphicon glyphicon-camera" aria-hidden="true">趣味の写真</span><br></p>
+<p class="text-center" id="animation_f"><span class="glyphicon glyphicon-camera" aria-hidden="true">趣味の写真</span><br></p>
 
 </section>
 
@@ -267,11 +267,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <section class="col-xs-12 col-sm-12 col-md-6">
 
-<h2 class="text-center font_sz80p pa_top200p text_letter_sp">BLOG</h2>
+<h2 class="text-center font_sz80p pa_top200p text_letter_sp" id="animation_g">BLOG</h2>
 
 <div class="line_c"></div>
 
-<p class="text-center pa_25_10p"><span class="glyphicon glyphicon-book" aria-hidden="true">ブログ</span></p>
+<p class="text-center" id="animation_g"><span class="glyphicon glyphicon-book" aria-hidden="true">ブログ</span></p>
 
 </section>
 
