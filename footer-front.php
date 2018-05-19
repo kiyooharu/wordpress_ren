@@ -15,7 +15,7 @@
 
 </div>
 
-<div class="col-xs-12 col-sm-12 col-md-12 pa_20p">
+<div class="col-xs-12 col-sm-12 col-md-12 pa_20p back_cf">
 
 <?php get_template_part( 'footer_widget'); ?>
 

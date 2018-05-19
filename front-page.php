@@ -3,15 +3,20 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Fooding
+ * @package Foodingwork
  */
 
 get_header(); ?>
 
 <div id="content" class="site-content">
 
-<!--インフォメーションここから-->
+<div class="text-center pa_100p back_dd main_sk">
+	<img src="/wordpress_ren/wp-content/uploads/2017/03/first-text.png" alt="人の心に残るものを" id="img_ani">
+	<p class="font_sz20 lineh31 pa_t30p ma_auto" id="img_text">サイトへようこそ！<br>制作実績・BLOG・写真等を掲載しております。<br>ゆっくりとご覧ください。</p>
+	<p class="font_sz16" id="img_text">- welcome ladies and gentlemen -</p>
+</div>
 
+<!--インフォメーションここから-->
 <div class="clearfix width_100p" id="start">
 </div>
 
@@ -41,12 +46,23 @@ while($loop->have_posts()): $loop->the_post(); ?>
 </div>
 
 </section>
-
 <!--インフォメーションここまで-->
+
+
+
+
+
+
 
 <!--solution-->
 
-<div class="clearfix width_100p pa_100_0" id="solution">
+<div class="col-xs-12 col-sm-12 col-md-12 back_cf">
+
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
+
+<div class="clearfix width_100p" id="solution">
 
 <section class="col-xs-12 col-sm-12 col-md-12">
 
@@ -55,14 +71,6 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <div class="line_a"></div>
 
 <p class="text-center" id="animation_b"><span class="glyphicon glyphicon-th-large" aria-hidden="true">ソリューション</span><br></p>
-
-</section>
-
-<div class="space_area">
-	<p>&nbsp;</p>
-</div>
-
-<section class="col-xs-12 col-sm-12 col-md-12 back_cf">
 
 <div class="pa_0p_10p">
 
@@ -88,17 +96,27 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </div>
 
+</div>
+
 </section>
 
 </div>
 
+</div>
 
 <!--solution-->
 
 
+
+
+
 <!--実績-->
 
-<div class="clearfix width_100p pa_100_0" id="work">
+<div class="clearfix width_100p" id="work">
+
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
 
 <section class="col-xs-12 col-sm-12 col-md-6">
 
@@ -106,7 +124,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="line_a"></div>
 
-<p class="text-center" id="animation_d"><span class="glyphicon glyphicon-bookmark" aria-hidden="true">過去の実績</span></p>
+<p class="text-center" id="animation_d"><span class="glyphicon glyphicon-bookmark" aria-hidden="true">制作実績</span></p>
 
 </section>
 
@@ -153,7 +171,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 </div>
 
 <!--more-->
-<section>
+<section class="ma_tp20">
 	<div class="cl-effect-10 more">
 		<a href="<?php echo get_permalink( get_page_by_path( 'portforio_all' )->ID ); ?>" data-hover="more"><span>more</span></a>
 	</div>
@@ -162,13 +180,26 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--実績-->
 
+
+
+
+
+
+
+
 <div class="space_area">
 	<p>&nbsp;</p>
 </div>
 
-<div class="back_color001 pa_100_0" id="profile">
+<div class="back_color001" id="profile">
+
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
 
 <!--プロフィール-->
+
+<section>
 
 <h2 class="font_sz80p text-center text_letter_sp cf_text_bk" id="animation_e">PROFILE</h2>
 
@@ -184,11 +215,17 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<ul class="clearfix">
 		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center"><img src="/wordpress_ren/wp-content/uploads/2017/11/myphoto.jpg" width="500px"></li>
 		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center line_h50"><p>きよはる</p></li>
-		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center line_h50"><p>大阪出身2007年から、4年間PCインストラクターに従事。<br>インストラクター時にオフィス関係の資格を多数取得その後、<br>通信関係の仕事に転機通信業に在職しながらDIGITAL HOLLYWOOD入学。<br>WEBおよび、GRAPHICを学び卒業後、デザイナー職へと転職。</p></li>
+		<li class="col-xs-12 col-sm-6 col-md-6 pull-right text-center line_h50"><p>大阪出身2007年から、4年間PCインストラクターに従事。インストラクター時にオフィス関係の資格を多数取得その後、通信関係の仕事に転機通信業に在職しながらDIGITAL HOLLYWOOD入学。WEBおよび、GRAPHICを学び卒業後、デザイナー職へと転職。</p></li>
 	</ul>
 </div>
 
 <!--プロフィール-->
+
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
+
+</section>
 
 </div>
 
@@ -197,7 +234,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 </div>
 
 <!--写真-->
-<div class="clearfix width_100p pa_100_0" id="photo">
+<div class="clearfix width_100p" id="photo">
 
 <section class="col-xs-12 col-sm-12 col-md-6 pull-right">
 
@@ -244,13 +281,16 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </div>
 
+</div>
+
 </section>
 
 </div>
+
 <!--写真-->
 
 <!--more-->
-<section>
+<section class="ma_tp20">
 	<div class="cl-effect-10 more">
 		<a href="<?php echo get_permalink( get_page_by_path( 'photo_all' )->ID ); ?>" data-hover="more"><span>more</span></a>
 	</div>
@@ -261,7 +301,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<p>&nbsp;</p>
 </div>
 
-<div class="back_color001 pa_100_0" id="blog">
+<div class="back_color001" id="blog">
+
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
 
 <div class="clearfix width_100p">
 
@@ -324,13 +368,23 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
+
 </section>
 
 </div>
 
 </div>
 
-</div>
+
 
 
 <?php get_footer('front');

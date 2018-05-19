@@ -9,8 +9,8 @@
 
 get_header("port"); ?>
 
-<div class="container">
-	<div id="primary" class="content-area">
+<div class="container archive">
+	<div id="primary" class="content-area col-xs-12 col-sm-6 col-md-5 col-lg-6">
 		<main id="main" class="site-main" role="main">
 
 		<?php

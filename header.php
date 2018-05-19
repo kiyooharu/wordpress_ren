@@ -31,11 +31,11 @@
 <!--アニメーション-->
 <script>
 jQuery(function(){
-jQuery('#animation, #animation_b, #animation_c, #animation_d, #animation_e, #animation_f, #animation_g, #animation_h').css('visibility','hidden');
+jQuery('#animation, #animation_b, #animation_c, #animation_d, #animation_e, #animation_f, #animation_g, #animation_h, #img_ani, #img_text').css('visibility','hidden');
 jQuery(window).scroll(function(){
  var windowHeight = jQuery(window).height(),
      topWindow = jQuery(window).scrollTop();
- jQuery('#animation, #animation_b, #animation_c, #animation_d, #animation_e, #animation_f, #animation_g, #animation_h').each(function(){
+ jQuery('#animation, #animation_b, #animation_c, #animation_d, #animation_e, #animation_f, #animation_g, #animation_h, #img_ani, #img_text').each(function(){
   var targetPosition = jQuery(this).offset().top;
   if(topWindow > targetPosition - windowHeight + 100){
    jQuery(this).addClass("fadeInDown");
