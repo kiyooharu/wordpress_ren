@@ -106,10 +106,6 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--solution-->
 
-
-
-
-
 <!--実績-->
 
 <div class="clearfix width_100p" id="work">
@@ -118,9 +114,9 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<p>&nbsp;</p>
 </div>
 
-<section class="col-xs-12 col-sm-12 col-md-6">
+<section class="col-xs-12 col-sm-12 col-md-12">
 
-<h2 class="font_sz80p pa_top200p text-center text_letter_sp" id="animation_c">WORK</h2>
+<h2 class="font_sz80p text-center text_letter_sp" id="animation_c">WORK</h2>
 
 <div class="line_a"></div>
 
@@ -128,17 +124,21 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<section class="col-xs-12 col-sm-12 col-md-6">
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
+
+<section class="col-xs-12 col-sm-12 col-md-12">
 
 <div class="pa_0p_10p">
 
-<?php $loop = new WP_Query(array("post_type" => "portforio", "posts_per_page" => 4 ));
+<?php $loop = new WP_Query(array("post_type" => "portforio", "posts_per_page" => 8 ));
 
 while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-3 ma_pa0p work"<?php post_class(); ?>>
 	<ul>
 
 	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 pa_10_0bp"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
@@ -146,17 +146,18 @@ while($loop->have_posts()): $loop->the_post(); ?>
 			<li class="position_ab top_0p right_0p z_in100 back_cred pa_5p_20p color_cf"><?php echo esc_html( $post->portforio_s ); ?></li>
 
 			<li class="position_ab top_90p left_10p z_in100 font_web font_sz33"><?php echo esc_html( $post->syurui ); ?></li>
-
+<!--
 			<li class="width_100p text-left">
 				<h3 class="font_20p text_dno">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 				</h3>
 			</li>
+-->
 		</ul>
 	</li>
-
+<!--
 	<li class="width_90p"><?php the_excerpt(); ?></li>
-
+-->
 	</ul>
 </div>
 
@@ -236,9 +237,9 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <!--写真-->
 <div class="clearfix width_100p" id="photo">
 
-<section class="col-xs-12 col-sm-12 col-md-6 pull-right">
+<section class="col-xs-12 col-sm-12 col-md-12 pull-right">
 
-<h2 class="font_sz80p pa_top200p text-center text_letter_sp" id="animation_f">PHOTO</h2>
+<h2 class="font_sz80p text-center text_letter_sp" id="animation_f">PHOTO</h2>
 
 <div class="line_c"></div>
 
@@ -246,17 +247,21 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<section class="col-xs-12 col-sm-12 col-md-6">
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
+
+<section class="col-xs-12 col-sm-12 col-md-12">
 
 <div class="pa_0p_10p">
 
-<?php $loop = new WP_Query(array("post_type" => "photo", "posts_per_page" => 4 ));
+<?php $loop = new WP_Query(array("post_type" => "photo", "posts_per_page" => 8 ));
 
 while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 ma_pa0p work"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-3 ma_pa0p work"<?php post_class(); ?>>
 	<ul>
 
 	<li class="position_re"><p class="col-xs12 col-sm-12 col-md-12 pa_10_0p"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
@@ -309,9 +314,9 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p">
 
-<section class="col-xs-12 col-sm-12 col-md-6">
+<section class="col-xs-12 col-sm-12 col-md-12">
 
-<h2 class="text-center font_sz80p pa_top200p text_letter_sp" id="animation_g">BLOG</h2>
+<h2 class="text-center font_sz80p text_letter_sp" id="animation_g">BLOG</h2>
 
 <div class="line_c"></div>
 
@@ -319,15 +324,19 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 </section>
 
-<section class="col-xs-12 col-sm-12 col-md-6">
+<div class="space_area">
+	<p>&nbsp;</p>
+</div>
 
-<?php $loop = new WP_Query(array("post_type" => "post", "posts_per_page" => 4 ));
+<section class="col-xs-12 col-sm-12 col-md-12">
+
+<?php $loop = new WP_Query(array("post_type" => "post", "posts_per_page" => 8 ));
 
 while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="clearfix width_100p ma_auto">
 
-<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-6 flt_l ma_bt20p"<?php post_class(); ?>>
+<div id=”post-<?php the_ID(); ?>” class="col-xs-6 col-sm-6 col-md-3 flt_l ma_bt20p"<?php post_class(); ?>>
 
 	<ul class="position_re blog_link">
 
